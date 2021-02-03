@@ -9,12 +9,12 @@ class Nav extends Component {
           <Navbar.Brand href="#home">
             <img
               alt=""
-              src="/logo.svg"
+              src="../../components/logo512.png"
               width="30"
               height="30"
               className="d-inline-block align-top"
             />{" "}
-            React Bootstrap
+            Unemployed
           </Navbar.Brand>
         </Navbar>
       </>
