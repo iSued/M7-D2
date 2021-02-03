@@ -24,7 +24,7 @@ class App extends Component {
   };
   handleSubmit = async () => {
     let response = await fetch(
-      `https://cors-anywhere.herokuapp.com/https://jobs.github.com/positions.json?description=${this.state.position}&full_time=${this.state.checked}&location=${this.state.location}`
+      `https://yabba-dabba-duls-cors-anywhere.herokuapp.com/https://jobs.github.com/positions.json?description=${this.state.position}&full_time=${this.state.checked}&location=${this.state.location}`
     );
     let data = await response.json();
     console.log(data);
