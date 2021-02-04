@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Card, Row, Col, Image } from "react-bootstrap";
-
 import { Button } from "@material-ui/core";
+import { Link } from "@reach/router";
 
 class Jobs extends Component {
   render() {
@@ -26,9 +26,15 @@ class Jobs extends Component {
                       <Card.Text>
                         {job.location}-{job.type}
                       </Card.Text>
-                      <Button variant="contained" color="primary">
-                        See Details
-                      </Button>
+                      <Link to={`/detail/${job.id}`} jobs={this.propsjob}>
+                        <Button
+                          variant="contained"
+                          color="primary"
+                          onClick={this.handleDetail}
+                        >
+                          See Details
+                        </Button>
+                      </Link>
                     </Card.Body>
                   </Card>
                 </Col>
